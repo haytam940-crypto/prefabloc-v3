@@ -130,16 +130,42 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ── Subtle 3D tilt on service / news cards ── */
-  document.querySelectorAll('.service-card, .news-card').forEach(card => {
-    card.style.transformStyle = 'preserve-3d';
-    card.addEventListener('mousemove', (e) => {
-      const r = card.getBoundingClientRect();
-      const x = ((e.clientX - r.left) / r.width - 0.5) * 8;
-      const y = ((e.clientY - r.top) / r.height - 0.5) * -8;
-      card.style.transform = `translateY(-6px) rotateY(${x}deg) rotateX(${y}deg)`;
+  /* ── Carousel drag-to-scroll ── */
+  document.querySelectorAll('.carousel-track').forEach(track => {
+    let isDown = false, startX = 0, scrollLeft = 0;
+
+    track.addEventListener('mousedown', (e) => {
+      isDown = true;
+      track.classList.add('is-dragging');
+      startX    = e.pageX - track.offsetLeft;
+      scrollLeft = track.scrollLeft;
     });
-    card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+    track.addEventListener('mouseleave', () => {
+      isDown = false;
+      track.classList.remove('is-dragging');
+    });
+    track.addEventListener('mouseup', () => {
+      isDown = false;
+      track.classList.remove('is-dragging');
+    });
+    track.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x    = e.pageX - track.offsetLeft;
+      const walk = (x - startX) * 1.6;
+      track.scrollLeft = scrollLeft - walk;
+    });
+
+    /* Touch support */
+    let touchStartX = 0, touchScrollLeft = 0;
+    track.addEventListener('touchstart', (e) => {
+      touchStartX    = e.touches[0].pageX;
+      touchScrollLeft = track.scrollLeft;
+    }, { passive: true });
+    track.addEventListener('touchmove', (e) => {
+      const diff = touchStartX - e.touches[0].pageX;
+      track.scrollLeft = touchScrollLeft + diff;
+    }, { passive: true });
   });
 
 });
