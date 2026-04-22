@@ -11,15 +11,22 @@ include 'includes/header.php';
   <div class="hero-glow-1"></div>
   <div class="hero-glow-2"></div>
 
+  <!-- Éléments décoratifs flottants -->
+  <span class="hero-deco d1">// N+35.69 W-05.83</span>
+  <span class="hero-deco d2">01001100_10</span>
+  <span class="hero-deco d3">// CHANTIER_0.01</span>
+  <span class="hero-deco d4">+35.6892 / -05.8296_</span>
+  <span class="hero-deco d5">// GEO_REF 2009</span>
+
   <div class="hero-content">
     <div class="container">
       <div class="hero-text">
         <div class="hero-tag">
-          <span class="dot"></span>
-          Entreprise Générale de BTP — Agréée FNBTP depuis 2009
+          <span class="hero-tag-inner">Agréée FNBTP depuis 2009</span>
+          <span class="hero-tag-bars">||</span>
         </div>
-        <h1>DU GROS ŒUVRE<br>À LA <span class="accent">LIVRAISON</span><br>CLÉ EN MAIN</h1>
-        <p class="hero-sub">Prefabloc prend en charge l'intégralité de vos chantiers : fondations, structure béton armé, charpente métallique, second œuvre et finitions — avec une maîtrise totale des délais et des coûts dans 8 régions du Maroc.</p>
+        <h1>DU GROS ŒUVRE<br><span class="line-indent">À LA LIVRAISON</span><br><span class="line-indent">CLÉ EN MAIN</span></h1>
+        <p class="hero-sub">Prefabloc prend en charge l'intégralité de vos chantiers : fondations, structure béton armé, charpente métallique, second œuvre et finitions — avec une maîtrise totale des délais dans 8 régions du Maroc.</p>
         <div class="hero-btns">
           <a href="realisations.php" class="btn btn-gold">Consulter notre portfolio →</a>
           <a href="contact.php" class="btn btn-outline-white">Obtenir un devis sous 48h</a>
@@ -100,8 +107,8 @@ include 'includes/header.php';
   <div class="container">
     <div class="about-grid">
       <div class="about-text">
-        <span class="sec-tag reveal up">Notre Identité</span>
-        <h2 class="sec-title reveal up reveal-delay-1">QUINZE ANS DE<br>CHANTIERS, DE BÉTON<br>ET DE CONFIANCE</h2>
+        <div class="sec-tag reveal up"><span class="sec-tag-inner">Notre Identité</span><span class="sec-tag-bars">||</span></div>
+        <h2 class="sec-title reveal up reveal-delay-1">QUINZE ANS<br><span class="line-indent">DE CHANTIERS</span><br><span class="line-indent">ET DE CONFIANCE</span></h2>
         <div class="divider-line reveal up reveal-delay-2"></div>
         <p class="about-lead reveal up reveal-delay-2">Prefabloc est une entreprise générale de BTP fondée en 2009 à Casablanca. Nous intervenons sur toutes les phases d'un projet : études géotechniques, fondations, structure porteuse, charpente, second œuvre et réception de l'ouvrage.</p>
         <p class="about-para reveal up reveal-delay-3">Notre parc matériel propre — grues à tour, coffrages tunnels, pelles hydrauliques et bétonnières volumétriques — nous permet de maîtriser les délais sans sous-traitance incontrôlée. Chaque chantier est encadré par un ingénieur génie civil et un conducteur de travaux expérimentés.</p>
@@ -144,8 +151,8 @@ include 'includes/header.php';
 <section class="section section-light">
   <div class="container">
     <div class="sec-head">
-      <span class="sec-tag reveal up">Nos Métiers</span>
-      <h2 class="sec-title reveal up reveal-delay-1">DU TERRASSEMENT<br>À LA RÉCEPTION</h2>
+      <div class="sec-tag reveal up"><span class="sec-tag-inner">Nos Métiers</span><span class="sec-tag-bars">||</span></div>
+      <h2 class="sec-title reveal up reveal-delay-1">DU TERRASSEMENT<br><span class="line-indent">À LA RÉCEPTION</span></h2>
       <div class="divider-line reveal up reveal-delay-2"></div>
       <p class="sec-sub reveal up reveal-delay-3">Six domaines de compétences techniques couvrant l'intégralité du cycle de vie d'un projet de construction au Maroc.</p>
     </div>
@@ -207,8 +214,8 @@ include 'includes/header.php';
 <section class="section">
   <div class="container">
     <div class="sec-head">
-      <span class="sec-tag reveal up">Références</span>
-      <h2 class="sec-title reveal up reveal-delay-1">QUELQUES-UNS<br>DE NOS CHANTIERS</h2>
+      <div class="sec-tag reveal up"><span class="sec-tag-inner">Références</span><span class="sec-tag-bars">||</span></div>
+      <h2 class="sec-title reveal up reveal-delay-1">QUELQUES-UNS<br><span class="line-indent">DE NOS CHANTIERS</span></h2>
       <div class="divider-line reveal up reveal-delay-2"></div>
       <p class="sec-sub reveal up reveal-delay-3">Des projets variés — résidentiel, tertiaire, industriel, infrastructure — qui illustrent l'étendue de notre savoir-faire constructif.</p>
     </div>
@@ -255,8 +262,8 @@ include 'includes/header.php';
 <section class="section section-light">
   <div class="container">
     <div class="sec-head">
-      <span class="sec-tag reveal up">Maîtres d'Ouvrage</span>
-      <h2 class="sec-title reveal up reveal-delay-1">ILS NOUS CONFIENT<br>LEURS CHANTIERS</h2>
+      <div class="sec-tag reveal up"><span class="sec-tag-inner">Maîtres d'Ouvrage</span><span class="sec-tag-bars">||</span></div>
+      <h2 class="sec-title reveal up reveal-delay-1">ILS NOUS CONFIENT<br><span class="line-indent">LEURS CHANTIERS</span></h2>
       <div class="divider-line reveal up reveal-delay-2"></div>
       <p class="sec-sub reveal up reveal-delay-3">Promoteurs immobiliers, groupes industriels, collectivités et établissements publics — nous travaillons avec les principaux donneurs d'ordre du Royaume.</p>
     </div>
@@ -274,8 +281,8 @@ include 'includes/header.php';
 <section class="section">
   <div class="container">
     <div class="sec-head">
-      <span class="sec-tag reveal up">Actualités Chantier</span>
-      <h2 class="sec-title reveal up reveal-delay-1">CE QUI SE PASSE<br>CHEZ PREFABLOC</h2>
+      <div class="sec-tag reveal up"><span class="sec-tag-inner">Actualités Chantier</span><span class="sec-tag-bars">||</span></div>
+      <h2 class="sec-title reveal up reveal-delay-1">CE QUI SE PASSE<br><span class="line-indent">CHEZ PREFABLOC</span></h2>
       <div class="divider-line reveal up reveal-delay-2"></div>
     </div>
     <div class="news-grid">
@@ -306,7 +313,7 @@ include 'includes/header.php';
 <!-- ══ CTA ══ -->
 <section class="cta-banner">
   <div class="container">
-    <h2 class="reveal up">VOTRE CHANTIER MÉRITE<br>UN <span class="gold">VRAI CONSTRUCTEUR</span></h2>
+    <h2 class="reveal up">VOTRE CHANTIER<br><span class="line-indent">MÉRITE UN</span><br><span class="line-indent"><span class="gold">VRAI CONSTRUCTEUR</span></span></h2>
     <p class="reveal up reveal-delay-1">Déposez votre dossier — plans, superficie, contraintes de site — et recevez une offre technique et financière chiffrée sous 48h ouvrées, sans engagement de votre part.</p>
     <div class="cta-btns reveal up reveal-delay-2">
       <a href="contact.php" class="btn btn-gold">Soumettre mon projet →</a>
