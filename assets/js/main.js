@@ -188,24 +188,16 @@ function initGSAP() {
   /* ── Ticker — already CSS animated, add fade-in ── */
   gsap.from('.ticker', { opacity: 0, duration: 0.6, delay: 0.1 });
 
-  /* ── Generic reveal fallback for remaining .reveal elements ── */
-  document.querySelectorAll('.reveal').forEach(el => {
-    if (!el.classList.contains('visible')) {
-      gsap.from(el, {
-        y: el.classList.contains('left') ? 0 : el.classList.contains('right') ? 0 : 28,
-        x: el.classList.contains('left') ? -36 : el.classList.contains('right') ? 36 : 0,
-        scale: el.classList.contains('scale') ? 0.92 : 1,
-        opacity: 0,
-        duration: 0.75,
-        ease: 'power3.out',
-        scrollTrigger: {
-          trigger: el,
-          start: 'top 88%',
-          toggleActions: 'play none none none'
-        }
-      });
-    }
-  });
+  /* ── Reveal via IntersectionObserver (plus fiable que GSAP pour les .reveal) ── */
+  const revealIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        revealIO.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => revealIO.observe(el));
 }
 
 /* ════════════════════════════════
