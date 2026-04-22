@@ -8,6 +8,8 @@ include 'includes/header.php';
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
 
   <div class="hero-content">
     <div class="container">
@@ -127,8 +129,8 @@ include 'includes/header.php';
         </div>
       </div>
       <div class="about-visual reveal right">
-        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&h=520&fit=crop" alt="Chantier gros œuvre Prefabloc" class="about-img-main">
-        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop" alt="Ingénieurs terrain Prefabloc" class="about-img-secondary">
+        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&h=600&fit=crop" alt="Chantier gros œuvre Prefabloc" class="about-img-main">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop" alt="Ingénieurs terrain Prefabloc" class="about-img-secondary">
         <div class="about-badge">
           <span>15+</span>
           Ans sur<br>le terrain
@@ -213,12 +215,12 @@ include 'includes/header.php';
     <div class="projects-grid">
       <?php
       $featured = [
-        ['villa-moderne-ain-diab','Villa Moderne Aïn Diab','Résidentiel','residential','Réalisé','Casablanca','14 mois','https://images.unsplash.com/photo-1613977257363-707ba9348227?w=700&h=525&fit=crop'],
-        ['immeuble-bureaux-technopark','Immeuble de Bureaux Technopark','Commercial','commercial','Réalisé','Casablanca','28 mois','https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&h=525&fit=crop'],
-        ['entrepot-logistique-tanger','Entrepôt Logistique Tanger Med','Industriel','industrial','En cours','Tanger','18 mois','https://images.unsplash.com/photo-1553413077-190dd305871c?w=700&h=525&fit=crop'],
+        ['villa-moderne-ain-diab','Villa Moderne Aïn Diab','Résidentiel','residential','Réalisé','Casablanca','14 mois','https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&h=525&fit=crop'],
+        ['immeuble-bureaux-technopark','Immeuble de Bureaux Technopark','Commercial','commercial','Réalisé','Casablanca','28 mois','https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&h=525&fit=crop'],
+        ['entrepot-logistique-tanger','Entrepôt Logistique Tanger Med','Industriel','industrial','En cours','Tanger','18 mois','https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&h=525&fit=crop'],
         ['voirie-zone-industrielle-berrechid','Voirie Zone Industrielle Berrechid','Travaux Publics','tp','Réalisé','Berrechid','16 mois','https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&h=525&fit=crop'],
-        ['renovation-hotel-fes','Rénovation Hôtel Palais Fassi','Rénovation','renovation','Réalisé','Fès','12 mois','https://images.unsplash.com/photo-1566073771259-6a8506099945?w=700&h=525&fit=crop'],
-        ['residence-luxe-souissi','Résidence Prestige Souissi','Résidentiel','residential','En cours','Rabat','20 mois','https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=700&h=525&fit=crop'],
+        ['renovation-hotel-fes','Rénovation Hôtel Palais Fassi','Rénovation','renovation','Réalisé','Fès','12 mois','https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700&h=525&fit=crop'],
+        ['residence-luxe-souissi','Résidence Prestige Souissi','Résidentiel','residential','En cours','Rabat','20 mois','https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=700&h=525&fit=crop'],
       ];
       foreach ($featured as $i => [$slug,$title,$cat,$catClass,$status,$city,$dur,$img]):
         $statusClass = $status === 'Réalisé' ? 'badge-status-done' : 'badge-status-ongoing';
@@ -279,9 +281,9 @@ include 'includes/header.php';
     <div class="news-grid">
       <?php
       $news = [
-        ['Nouveau marché','15 Jan. 2025','ADJUDICATION D\'UN IMMEUBLE R+7 À RABAT-AGDAL','Prefabloc a été retenu pour la construction d\'un immeuble résidentiel de 42 logements à Agdal. Le chantier débute en mars 2025, avec une structure en voiles et poteaux béton armé sur 3 niveaux de sous-sol.','https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=700&h=450&fit=crop'],
-        ['Certification','08 Jan. 2025','RENOUVELLEMENT ISO 9001 : NOTRE SMQ VALIDÉ POUR 3 ANS','Notre Système de Management de la Qualité a passé l\'audit de renouvellement avec zéro non-conformité majeure. Ce résultat confirme la maîtrise de nos processus de contrôle du béton, de traçabilité des matériaux et de gestion documentaire.','https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&h=450&fit=crop'],
-        ['Équipement','22 Déc. 2024','ACQUISITION D\'UNE GRUE À TOUR 280 EC-H LIEBHERR','Pour répondre à la montée en puissance de nos chantiers R+8 et plus, nous avons investi dans une grue à tour à montage rapide de 280 mètres-tonnes, portant notre parc de levage à 6 unités opérationnelles.','https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&h=450&fit=crop'],
+        ['Nouveau marché','15 Jan. 2025','ADJUDICATION D\'UN IMMEUBLE R+7 À RABAT-AGDAL','Prefabloc a été retenu pour la construction d\'un immeuble résidentiel de 42 logements à Agdal. Le chantier débute en mars 2025, avec une structure en voiles et poteaux béton armé sur 3 niveaux de sous-sol.','https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&h=450&fit=crop'],
+        ['Certification','08 Jan. 2025','RENOUVELLEMENT ISO 9001 : NOTRE SMQ VALIDÉ POUR 3 ANS','Notre Système de Management de la Qualité a passé l\'audit de renouvellement avec zéro non-conformité majeure. Ce résultat confirme la maîtrise de nos processus de contrôle du béton, de traçabilité des matériaux et de gestion documentaire.','https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&h=450&fit=crop'],
+        ['Équipement','22 Déc. 2024','ACQUISITION D\'UNE GRUE À TOUR 280 EC-H LIEBHERR','Pour répondre à la montée en puissance de nos chantiers R+8 et plus, nous avons investi dans une grue à tour à montage rapide de 280 mètres-tonnes, portant notre parc de levage à 6 unités opérationnelles.','https://images.unsplash.com/photo-1590088988666-5e20edc4b83b?w=700&h=450&fit=crop'],
       ];
       foreach ($news as $i => [$cat,$date,$title,$excerpt,$img]): ?>
       <div class="news-card reveal up reveal-delay-<?= $i + 1 ?>">
