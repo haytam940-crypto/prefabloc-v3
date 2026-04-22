@@ -117,24 +117,24 @@ button { font-family:inherit; cursor:pointer; border:none; background:none; }
   overflow:hidden;
 }
 
-/* Dark 40% left */
+/* Dark 50% left */
 .hero::before {
   content:'';
-  position:absolute; inset:0 60% 0 0;
+  position:absolute; inset:0 50% 0 0;
   background:var(--dark);
   z-index:0;
 }
-/* Cream 60% right */
+/* Cream 50% right */
 .hero::after {
   content:'';
-  position:absolute; inset:0 0 0 40%;
+  position:absolute; inset:0 0 0 50%;
   background:var(--cream);
   z-index:0;
 }
 
 /* Animated grid — dark side only */
 .hero-grid {
-  position:absolute; top:0; left:0; bottom:0; width:40%;
+  position:absolute; top:0; left:0; bottom:0; width:50%;
   background-image:
     linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
@@ -211,7 +211,7 @@ button { font-family:inherit; cursor:pointer; border:none; background:none; }
 /* Two-column flex body — ancré en bas comme Solais */
 .hero-body {
   position:absolute; bottom:0; left:0; right:0; z-index:3;
-  display:grid; grid-template-columns:40% 60%;
+  display:grid; grid-template-columns:50% 50%;
   align-items:flex-end;
   padding-bottom:56px;
   max-width:1280px; margin:0 auto; padding-left:40px; padding-right:40px;
@@ -242,8 +242,8 @@ button { font-family:inherit; cursor:pointer; border:none; background:none; }
 
 .hero h1 {
   font-family:var(--display);
-  font-size:clamp(36px, 4.5vw, 64px);
-  font-weight:400; line-height:1.0;
+  font-size:clamp(28px, 3.5vw, 52px);
+  font-weight:400; line-height:1.05;
   color:var(--white); letter-spacing:normal;
   margin:0;
 }
