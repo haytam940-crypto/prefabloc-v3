@@ -23,6 +23,30 @@
 
 /* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Clip-path support pour sections ── */
+.about-section,
+.services-intro,
+.service-step,
+.numbers-section,
+.carousel-section,
+.cta-banner {
+  will-change: clip-path, opacity;
+}
+
+/* ── Sections avec z-index pour l'effet superposition ── */
+.hero           { z-index: 1; position: relative; }
+.about-section  { z-index: 2; position: relative; }
+.services-intro { z-index: 3; position: relative; }
+.service-step   { z-index: 4; position: relative; }
+.numbers-section{ z-index: 5; position: relative; }
+.carousel-section{ z-index: 6; position: relative; }
+.cta-banner     { z-index: 7; position: relative; }
+
+/* ── Float images dans services intro ── */
+.float-img {
+  will-change: transform;
+}
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
   font-family: var(--mono);
